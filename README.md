@@ -23,6 +23,10 @@ iterating over the elements is reversed, the array is still sorted the same way
 some basic testing code that uses [jsverify](https://jsverify.github.io/) in
 `code.test.js`.
 
+I used the above code and changed it to insert sort in the opposite direction.
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
 ## Average-Case Time Complexity of Insertion Sort
 
 In the lectures, we covered that insertion sort has best-case time complexity of
@@ -36,3 +40,7 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+Starting from the top to bottom, we have two nested for loops, each being
+O(n), this is because each for loop is going over the array's nth elements. So, this would be
+$\Theta(n^2)$ for an average-case time complexity.
